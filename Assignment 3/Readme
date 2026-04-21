@@ -1,1 +1,28 @@
+Overview
+This experiment studies the impact of simultaneous traffic within a LAN on overall network performance, with emphasis on delay and packet loss under varying load conditions.
 
+Objective
+To generate multiple ping requests at the same time in order to analyze queueing behavior.
+To compare how the network performs under light traffic versus heavy traffic conditions.
+To understand how congestion occurs in shared links and why Quality of Service (QoS) mechanisms are necessary.
+
+Methodology
+Network Setup:
+A LAN topology was created consisting of a single switch connected to six PCs. Each device was assigned a static IP address to maintain proper communication.
+Initial Test (Low Traffic):
+A single ping stream was sent from PC1 to PC6 to observe network performance under minimal load.
+Stress Test (High Traffic):
+Three ping operations were executed simultaneously (PC1→PC6, PC2→PC5, PC3→PC4) to create congestion on the shared network link.
+
+Observations
+(Replace with your own findings if needed)
+In the low traffic scenario, the network showed stable performance with minimal delay and no packet loss.
+When multiple ping requests were generated simultaneously, the response time increased, indicating higher latency.
+A few packets were dropped during high traffic, showing the effect of congestion.
+The results demonstrate that limited bandwidth in shared links can lead to bottlenecks.
+This experiment highlights the importance of implementing QoS techniques to manage traffic efficiently.
+
+Files Included
+exp3_loadtest.pkt → Packet Tracer file used for simulation
+output_exp3.txt → Contains ping results and recorded observations
+report_exp3.pdf → Detailed report with screenshots and analysis
